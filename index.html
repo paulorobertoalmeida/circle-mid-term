@@ -6,37 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./main.js"></script>
     <title>Circle</title>
 </head>
 
-<body>
-    <!-- <div>
-        <nav class="flex justify-content-center space-x-4 mt-2">
-            <div class="flex justify-content-center space-x-4">
-                <a href="/dashboard"
-                    class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
-                <a href="/team"
-                    class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Team</a>
-                <a href="/projects"
-                    class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projects</a>
-                <a href="/reports"
-                    class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Reports</a>
-            </div>
-
-    </div> -->
-
-    <nav class="container flex justify-between px-4 py-8 mx-auto bg-white">
+<body class="bg-[#f2f4fc]">
+    <!-- Navbar -->
+    <nav class="container flex justify-between px-4 py-8 mx-auto ">
         <div>
             <h3 class="text-2xl font-medium text-blue-700">Circle</h3>
         </div>
         <div class="hidden space-x-8 lg:flex">
-            <a href="#">Home</a>
+            <a href="#" class="hover:blue-600 active:blue-600">Home</a>
             <a href="#">Projects</a>
             <a href="#">Services</a>
         </div>
         <div>
             <button
-                class="px-4 py-2 bg-indigo-500 outline-none rounded text-white shadow-indigo-200 shadow-lg font-medium active:shadow-none active:scale-95 hover:bg-indigo-600 focus:bg-indigo-600 focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200">Contact
+                class="px-4 py-2 bg-indigo-500 outline-none rounded text-white shadow-indigo-200 shadow-lg font-medium active:shadow-none active:scale-95 hover:bg-indigo-600 focus:bg-indigo-600 focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200 hidden md:inline">Contact
                 Us</button>
         </div>
         <div class="flex lg:hidden">
@@ -46,10 +33,9 @@
             </svg>
 
     </nav>
-    </div>
-    </nav>
 
-    <section class="bg-white dark:bg-gray-900">
+    <!-- Hero Section -->
+    <section class="bg-[#f2f4fc] dark:bg-gray-900">
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div class="mr-auto place-self-center lg:col-span-7">
                 <h1
@@ -60,7 +46,7 @@
                     mobile apps.
                 </p>
                 <a href="#"
-                    class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900  hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                     See our work
                 </a>
                 <a href="#"
@@ -68,72 +54,879 @@
                     Get In Touch
                 </a>
             </div>
+<!-- 
+            <div class="relative h-32 w-32">
+                <div class="absolute top-0 left-19 right-auto bottom-auto max-w-sm" style="">
+                    <img src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b1ac3e60b6651cd34d_Card%201.png"
+                        class="" alt="">
+
+                </div>
+            </div> -->
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
                 <img src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b211be2e88fb5411ed_Hero%20Image.png"
                     alt="mockup">
             </div>
         </div>
     </section>
-
-    <nav class="bg-white ">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-7">
-                    <!--Website Logo-->
-
-                    <a href="#" class="flex items-center py-2 px-2">
-                        <img src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b780a3b137cb739a90_Airbnb%20Logo.svg" alt="Logo" class="h-8 w-8 mr-2">
-                       
+    <!-- Link Section -->
+    <nav class="bg-[#f2f4fc] ">
+        <div class="max-w-7xl mx-auto flex content-center justify-center;">
+            <div class="flex justify-center mx-auto">
+                <div class="hidden md:flex justify-center space-x-1">
+                    <a href="" class="py-4 px-2 text-gray-500 border-b-4 border-purple-500 font-semibold">
+                        <img src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b79add40db8a6896bf_Google%20Logo.svg"
+                            alt="">
+                    </a>
+                    <a href=""
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">
+                        <img src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b780a3b137cb739a90_Airbnb%20Logo.svg"
+                            alt="">
+                    </a>
+                    <a href=""
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">
+                        <img src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b752675aadf1d03a03_Microsoft%20Logo.svg"
+                            alt="">
+                    </a>
+                    <a href=""
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">
+                        <img src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7ac3e6078471cd3c3_FedEx%20Logo.svg"
+                            alt="">
+                    </a>
+                    <a href=""
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">
+                        <img src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7425046dbed56ff16_Amazon%20Logo.svg"
+                            alt="">
                     </a>
                 </div>
-                <div class="hidden md:flex items-center space-x-1">
-                    <a href="" class="py-4 px-2 text-gray-500 border-b-4 border-purple-500 font-semibold">Home</a>
-                    <a href=""
-                        class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">
-                              Services
-                  </a>
-                    <a href=""
-                        class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">
-                              About
-                  </a>
-                    <a href=""
-                        class="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">
-                              Contact Us
-                  </a>
-                </div>
 
-                <div class="md:hidden flex items-center">
-                    <button class="outline-none menu-button">
-                        <svg class="w-6 h-6 text-gray-500" x-show="! showMenu" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-width="2" viewBox="0 00 24 24" stroke="currentColor">
-                            <path d="m4 6h16M4 12h16M4 18h16"></path>
+        
+
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Recent Projects -->
+    <section class="pt-20 lg:pt-[120px] pb-10 lg:pb-20 d-flex">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center flex-wrap -mx-4">
+                <div class="max-w-sm md:w-1/2 xl:w-1/3 px-4">
+                    <div class="bg-white rounded-lg overflow-hidden mb-10">
+                        <img src="https://uploads-ssl.webflow.com/61fead28c13f346b71e5645f/61feadb7386a4ce8e1606b95_1-p-1080.jpeg" alt="image"
+                            class="w-full" />
+                        <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                            <h3>
+                                <a href="javascript:void(0)" class="
+                             font-semibold
+                             text-dark text-xl
+                             sm:text-[22px]
+                             md:text-xl
+                             lg:text-[22px]
+                             xl:text-xl
+                             2xl:text-[22px]
+                             mb-4
+                             block
+                             hover:text-primary
+                             " class="title">
+                                    50+ Best creative website themes & templates
+                                </a>
+                            </h3>
+                            <p class="text-base text-body-color leading-relaxed mb-7" class="text-body">
+                                Lorem ipsum dolor sit amet pretium consectetur adipiscing
+                                elit. Lorem consectetur adipiscing elit.
+                            </p>
+                            <a href="javascript:void(0)" class="
+                          inline-block
+                          py-2
+                          px-7
+                          border border-[#E5E7EB]
+                          rounded-full
+                          text-base text-body-color
+                          font-medium
+                          hover:border-primary hover:bg-primary hover:text-white
+                          transition
+                          ">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm md:w-1/2 xl:w-1/3 px-4">
+                    <div class="bg-white rounded-lg overflow-hidden mb-10">
+                        <img src="https://uploads-ssl.webflow.com/61fead28c13f346b71e5645f/61feae20bffd880ac1b46d5d_2-p-800.jpeg" alt="image"
+                            class="w-full" />
+                        <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                            <h3>
+                                <a href="javascript:void(0)" class="
+                             font-semibold
+                             text-dark text-xl
+                             sm:text-[22px]
+                             md:text-xl
+                             lg:text-[22px]
+                             xl:text-xl
+                             2xl:text-[22px]
+                             mb-4
+                             block
+                             hover:text-primary
+                             ">
+                                    The ultimate UX and UI guide to card design
+                                </a>
+                            </h3>
+                            <p class="text-base text-body-color leading-relaxed mb-7">
+                                Lorem ipsum dolor sit amet pretium consectetur adipiscing
+                                elit. Lorem consectetur adipiscing elit.
+                            </p>
+                            <a href="javascript:void(0)" class="
+                          inline-block
+                          py-2
+                          px-7
+                          border border-[#E5E7EB]
+                          rounded-full
+                          text-base text-body-color
+                          font-medium
+                          hover:border-primary hover:bg-primary hover:text-white
+                          transition
+                          ">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm md:w-1/2 xl:w-1/3 px-4">
+                    <div class="bg-white rounded-lg overflow-hidden mb-10">
+                        <img src="https://uploads-ssl.webflow.com/61fead28c13f346b71e5645f/61feae3dbd995716808be594_3-p-1080.jpeg" alt="image"
+                            class="w-full" />
+                        <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                            <h3>
+                                <a href="javascript:void(0)" class="
+                             font-semibold
+                             text-dark text-xl
+                             sm:text-[22px]
+                             md:text-xl
+                             lg:text-[22px]
+                             xl:text-xl
+                             2xl:text-[22px]
+                             mb-4
+                             block
+                             hover:text-primary
+                             ">
+                                    Creative Card Component designs graphic elements
+                                </a>
+                            </h3>
+                            <p class="text-base text-body-color leading-relaxed mb-7">
+                                Lorem ipsum dolor sit amet pretium consectetur adipiscing
+                                elit. Lorem consectetur adipiscing elit.
+                            </p>
+                            <a href="javascript:void(0)" class="
+                          inline-block
+                          py-2
+                          px-7
+                          border border-[#E5E7EB]
+                          rounded-full
+                          text-base text-body-color
+                          font-medium
+                          hover:border-primary hover:bg-primary hover:text-white
+                          transition
+                          ">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Testimonials Section Start -->
+    <section class="pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] bg-slate-600">
+        <div class="container">
+            <div x-data="
+          {
+          slides: ['1','2','3'],
+          activeSlide: 1,
+          activeButton: 'w-[30px] bg-primary',
+          button: 'w-[10px] bg-[#E4E4E4]'
+          }
+          ">
+                <div class="flex justify-center relative">
+                    <div class="
+                w-full
+                md:w-11/12
+                lg:w-10/12
+                xl:w-8/12
+                relative
+                pb-16
+                xl:pb-0
+                ">
+                        <div class="
+                   snap
+                   w-full
+                   max-w-[300px]
+                   xs:max-w-[368px]
+                   sm:max-w-[508px]
+                   md:max-w-[630px]
+                   lg:max-w-[738px]
+                   2xl:max-w-[850px]
+                   mx-auto
+                   h-auto
+                   flex flex-no-wrap
+                   overflow-hidden
+                   transition-all
+                   " x-ref="carousel">
+                            <div class="
+                      min-w-[300px]
+                      xs:min-w-[368px]
+                      sm:min-w-[508px]
+                      md:min-w-[630px]
+                      lg:min-w-[738px]
+                      2xl:min-w-[850px]
+                      mx-auto
+                      h-full
+                      sm:p-6
+                      ">
+                                <div class="w-full md:flex items-center">
+                                    <div class="
+                            max-w-[310px]
+                            md:max-w-[250px]
+                            lg:max-w-[280px]
+                            w-full
+                            md:mr-12
+                            lg:mr-14
+                            2xl:mr-16
+                            mb-12
+                            md:mb-0
+                            relative
+                            ">
+                                        <img src="https://cdn.tailgrids.com/1.0/assets/images/testimonials/testimonial-01/image-01.jpg"
+                                            alt="image" class="w-full" />
+                                        <span class="absolute z-[-1] -top-6 -left-6 hidden sm:block">
+                                            <svg width="77" height="77" viewBox="0 0 77 77" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="1.66343" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 1.66343 74.5221)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 1.66343 30.94)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 16.3016 74.5221)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 16.3016 30.94)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 30.9398 74.5221)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 30.9398 30.94)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 45.578 74.5221)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 45.578 30.94)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="74.5216" r="1.66343"
+                                                    transform="rotate(-90 60.2162 74.5216)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="74.5216" r="1.66343"
+                                                    transform="rotate(-90 74.6634 74.5216)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="30.9398" r="1.66343"
+                                                    transform="rotate(-90 60.2162 30.9398)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="30.9398" r="1.66343"
+                                                    transform="rotate(-90 74.6634 30.9398)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 1.66343 59.8839)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 1.66343 16.3017)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 16.3016 59.8839)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 16.3016 16.3017)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 30.9398 59.8839)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 30.9398 16.3017)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 45.578 59.8839)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 45.578 16.3017)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 60.2162 59.8839)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 74.6634 59.8839)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 60.2162 16.3017)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 74.6634 16.3017)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 1.66343 45.2455)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="1.66342" r="1.66343"
+                                                    transform="rotate(-90 1.66343 1.66342)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 16.3016 45.2455)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="1.66342" r="1.66343"
+                                                    transform="rotate(-90 16.3016 1.66342)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 30.9398 45.2455)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="1.66342" r="1.66343"
+                                                    transform="rotate(-90 30.9398 1.66342)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 45.578 45.2455)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="1.66344" r="1.66343"
+                                                    transform="rotate(-90 45.578 1.66344)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="45.2458" r="1.66343"
+                                                    transform="rotate(-90 60.2162 45.2458)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="45.2458" r="1.66343"
+                                                    transform="rotate(-90 74.6634 45.2458)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="1.66371" r="1.66343"
+                                                    transform="rotate(-90 60.2162 1.66371)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="1.66371" r="1.66343"
+                                                    transform="rotate(-90 74.6634 1.66371)" fill="#3056D3" />
+                                            </svg>
+                                        </span>
+                                        <span class="absolute z-[-1] -bottom-6 -right-6">
+                                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3 32C3 15.9837 15.9837 3 32 3C48.0163 2.99999 61 15.9837 61 32C61 48.0163 48.0163 61 32 61C15.9837 61 3 48.0163 3 32Z"
+                                                    stroke="#13C296" stroke-width="6" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="w-full">
+                                        <div>
+                                            <div class="mb-7">
+                                                <img src="https://cdn.tailgrids.com/1.0/assets/images/testimonials/testimonial-01/lineicon.svg"
+                                                    alt="lineicon" />
+                                            </div>
+                                            <p class="
+                                  font-medium
+                                  italic
+                                  text-body-color text-base
+                                  sm:text-lg
+                                  mb-11
+                                  ">
+                                                Velit est sit voluptas eum sapiente omnis! Porro,
+                                                impedit minus quam reprehenderit tempore sint quaerat
+                                                id! Mollitia perspiciatis est asperiores commodi
+                                                labore!
+                                            </p>
+                                            <h4 class="font-semibold text-dark text-xl">
+                                                Larry Diamond
+                                            </h4>
+                                            <p class="text-body-color text-base">
+                                                Chief Executive Officer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="
+                      min-w-[300px]
+                      xs:min-w-[368px]
+                      sm:min-w-[508px]
+                      md:min-w-[630px]
+                      lg:min-w-[738px]
+                      2xl:min-w-[850px]
+                      mx-auto
+                      h-full
+                      sm:p-6
+                      ">
+                                <div class="w-full md:flex items-center">
+                                    <div class="
+                            max-w-[310px]
+                            md:max-w-[250px]
+                            lg:max-w-[280px]
+                            w-full
+                            md:mr-12
+                            lg:mr-14
+                            2xl:mr-16
+                            mb-12
+                            md:mb-0
+                            relative
+                            ">
+                                        <img src="https://cdn.tailgrids.com/1.0/assets/images/testimonials/testimonial-01/image-01.jpg"
+                                            alt="image" class="w-full" />
+                                        <span class="absolute z-[-1] -top-6 -left-6 hidden sm:block">
+                                            <svg width="77" height="77" viewBox="0 0 77 77" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="1.66343" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 1.66343 74.5221)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 1.66343 30.94)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 16.3016 74.5221)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 16.3016 30.94)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 30.9398 74.5221)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 30.9398 30.94)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 45.578 74.5221)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 45.578 30.94)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="74.5216" r="1.66343"
+                                                    transform="rotate(-90 60.2162 74.5216)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="74.5216" r="1.66343"
+                                                    transform="rotate(-90 74.6634 74.5216)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="30.9398" r="1.66343"
+                                                    transform="rotate(-90 60.2162 30.9398)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="30.9398" r="1.66343"
+                                                    transform="rotate(-90 74.6634 30.9398)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 1.66343 59.8839)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 1.66343 16.3017)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 16.3016 59.8839)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 16.3016 16.3017)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 30.9398 59.8839)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 30.9398 16.3017)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 45.578 59.8839)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 45.578 16.3017)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 60.2162 59.8839)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 74.6634 59.8839)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 60.2162 16.3017)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 74.6634 16.3017)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 1.66343 45.2455)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="1.66342" r="1.66343"
+                                                    transform="rotate(-90 1.66343 1.66342)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 16.3016 45.2455)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="1.66342" r="1.66343"
+                                                    transform="rotate(-90 16.3016 1.66342)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 30.9398 45.2455)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="1.66342" r="1.66343"
+                                                    transform="rotate(-90 30.9398 1.66342)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 45.578 45.2455)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="1.66344" r="1.66343"
+                                                    transform="rotate(-90 45.578 1.66344)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="45.2458" r="1.66343"
+                                                    transform="rotate(-90 60.2162 45.2458)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="45.2458" r="1.66343"
+                                                    transform="rotate(-90 74.6634 45.2458)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="1.66371" r="1.66343"
+                                                    transform="rotate(-90 60.2162 1.66371)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="1.66371" r="1.66343"
+                                                    transform="rotate(-90 74.6634 1.66371)" fill="#3056D3" />
+                                            </svg>
+                                        </span>
+                                        <span class="absolute z-[-1] -bottom-6 -right-6">
+                                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3 32C3 15.9837 15.9837 3 32 3C48.0163 2.99999 61 15.9837 61 32C61 48.0163 48.0163 61 32 61C15.9837 61 3 48.0163 3 32Z"
+                                                    stroke="#13C296" stroke-width="6" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="w-full">
+                                        <div>
+                                            <div class="mb-7">
+                                                <img src="https://cdn.tailgrids.com/1.0/assets/images/testimonials/testimonial-01/lineicon.svg"
+                                                    alt="lineicon" />
+                                            </div>
+                                            <p class="
+                                  font-medium
+                                  italic
+                                  text-body-color text-base
+                                  sm:text-lg
+                                  mb-11
+                                  ">
+                                                Velit est sit voluptas eum sapiente omnis! Porro,
+                                                impedit minus quam reprehenderit tempore sint quaerat
+                                                id! Mollitia perspiciatis est asperiores commodi
+                                                labore!
+                                            </p>
+                                            <h4 class="font-semibold text-dark text-xl">
+                                                Larry Diamond
+                                            </h4>
+                                            <p class="text-body-color text-base">
+                                                Chief Executive Officer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="
+                      min-w-[300px]
+                      xs:min-w-[368px]
+                      sm:min-w-[508px]
+                      md:min-w-[630px]
+                      lg:min-w-[738px]
+                      2xl:min-w-[850px]
+                      mx-auto
+                      h-full
+                      sm:p-6
+                      ">
+                                <div class="w-full md:flex items-center">
+                                    <div class="
+                            max-w-[310px]
+                            md:max-w-[250px]
+                            lg:max-w-[280px]
+                            w-full
+                            md:mr-12
+                            lg:mr-14
+                            2xl:mr-16
+                            mb-12
+                            md:mb-0
+                            relative
+                            ">
+                                        <img src="https://cdn.tailgrids.com/1.0/assets/images/testimonials/testimonial-01/image-01.jpg"
+                                            alt="image" class="w-full" />
+                                        <span class="absolute z-[-1] -top-6 -left-6 hidden sm:block">
+                                            <svg width="77" height="77" viewBox="0 0 77 77" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="1.66343" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 1.66343 74.5221)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 1.66343 30.94)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 16.3016 74.5221)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 16.3016 30.94)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 30.9398 74.5221)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 30.9398 30.94)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="74.5221" r="1.66343"
+                                                    transform="rotate(-90 45.578 74.5221)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="30.94" r="1.66343"
+                                                    transform="rotate(-90 45.578 30.94)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="74.5216" r="1.66343"
+                                                    transform="rotate(-90 60.2162 74.5216)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="74.5216" r="1.66343"
+                                                    transform="rotate(-90 74.6634 74.5216)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="30.9398" r="1.66343"
+                                                    transform="rotate(-90 60.2162 30.9398)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="30.9398" r="1.66343"
+                                                    transform="rotate(-90 74.6634 30.9398)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 1.66343 59.8839)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 1.66343 16.3017)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 16.3016 59.8839)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 16.3016 16.3017)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 30.9398 59.8839)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 30.9398 16.3017)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 45.578 59.8839)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 45.578 16.3017)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 60.2162 59.8839)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="59.8839" r="1.66343"
+                                                    transform="rotate(-90 74.6634 59.8839)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 60.2162 16.3017)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="16.3017" r="1.66343"
+                                                    transform="rotate(-90 74.6634 16.3017)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 1.66343 45.2455)" fill="#3056D3" />
+                                                <circle cx="1.66343" cy="1.66342" r="1.66343"
+                                                    transform="rotate(-90 1.66343 1.66342)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 16.3016 45.2455)" fill="#3056D3" />
+                                                <circle cx="16.3016" cy="1.66342" r="1.66343"
+                                                    transform="rotate(-90 16.3016 1.66342)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 30.9398 45.2455)" fill="#3056D3" />
+                                                <circle cx="30.9398" cy="1.66342" r="1.66343"
+                                                    transform="rotate(-90 30.9398 1.66342)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="45.2455" r="1.66343"
+                                                    transform="rotate(-90 45.578 45.2455)" fill="#3056D3" />
+                                                <circle cx="45.578" cy="1.66344" r="1.66343"
+                                                    transform="rotate(-90 45.578 1.66344)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="45.2458" r="1.66343"
+                                                    transform="rotate(-90 60.2162 45.2458)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="45.2458" r="1.66343"
+                                                    transform="rotate(-90 74.6634 45.2458)" fill="#3056D3" />
+                                                <circle cx="60.2162" cy="1.66371" r="1.66343"
+                                                    transform="rotate(-90 60.2162 1.66371)" fill="#3056D3" />
+                                                <circle cx="74.6634" cy="1.66371" r="1.66343"
+                                                    transform="rotate(-90 74.6634 1.66371)" fill="#3056D3" />
+                                            </svg>
+                                        </span>
+                                        <span class="absolute z-[-1] -bottom-6 -right-6">
+                                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3 32C3 15.9837 15.9837 3 32 3C48.0163 2.99999 61 15.9837 61 32C61 48.0163 48.0163 61 32 61C15.9837 61 3 48.0163 3 32Z"
+                                                    stroke="#13C296" stroke-width="6" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="w-full">
+                                        <div>
+                                            <div class="mb-7">
+                                                <img src="" alt="lineicon" />
+                                            </div>
+                                            <p class="
+                                  font-medium
+                                  italic
+                                  text-body-color text-base
+                                  sm:text-lg
+                                  mb-11
+                                  ">
+                                                Velit est sit voluptas eum sapiente omnis! Porro,
+                                                impedit minus quam reprehenderit tempore sint quaerat
+                                                id! Mollitia perspiciatis est asperiores commodi
+                                                labore!
+                                            </p>
+                                            <h4 class="font-semibold text-dark text-xl">
+                                                Larry Diamond
+                                            </h4>
+                                            <p class="text-body-color text-base">
+                                                Chief Executive Officer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="
+                   absolute
+                   left-0
+                   right-0
+                   bottom-0
+                   flex
+                   items-center
+                   justify-center
+                   lg:pl-[120px]
+                   2xl:pl-0
+                   ">
+                            <button class="
+                      w-12
+                      h-12
+                      rounded-full
+                      flex
+                      items-center
+                      justify-center
+                      bg-white
+                      text-primary
+                      hover:bg-primary hover:text-white
+                      transition-all
+                      shadow-input
+                      mx-1
+                      " @click="$refs.carousel.scrollLeft = $refs.carousel.scrollLeft - ($refs.carousel.scrollWidth / slides.length); activeSlide -= 1">
+                                <svg width="15" height="13" viewBox="0 0 15 13" class="fill-current">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.24264 11.8033L0.46967 7.03037C0.176777 6.73748 0.176777 6.2626 0.46967 5.96971L5.24264 1.19674C5.53553 0.903845 6.01041 0.903845 6.3033 1.19674C6.59619 1.48963 6.59619 1.96451 6.3033 2.2574L2.81066 5.75004H14C14.4142 5.75004 14.75 6.08583 14.75 6.50004C14.75 6.91425 14.4142 7.25004 14 7.25004H2.81066L6.3033 10.7427C6.59619 11.0356 6.59619 11.5104 6.3033 11.8033C6.01041 12.0962 5.53553 12.0962 5.24264 11.8033Z" />
+                                </svg>
+                            </button>
+                            <button class="
+                      w-12
+                      h-12
+                      rounded-full
+                      flex
+                      items-center
+                      justify-center
+                      bg-white
+                      text-primary
+                      hover:bg-primary hover:text-white
+                      transition-all
+                      shadow-input
+                      mx-1
+                      " @click="$refs.carousel.scrollLeft = $refs.carousel.scrollLeft + ($refs.carousel.scrollWidth / slides.length); activeSlide += 1">
+                                <svg width="15" height="13" viewBox="0 0 15 13" class="fill-current">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.75736 11.8033L14.5303 7.03037C14.8232 6.73748 14.8232 6.2626 14.5303 5.96971L9.75736 1.19674C9.46447 0.903845 8.98959 0.903845 8.6967 1.19674C8.40381 1.48963 8.40381 1.96451 8.6967 2.2574L12.1893 5.75004H1C0.585786 5.75004 0.25 6.08583 0.25 6.50004C0.25 6.91425 0.585786 7.25004 1 7.25004H12.1893L8.6967 10.7427C8.40381 11.0356 8.40381 11.5104 8.6967 11.8033C8.98959 12.0962 9.46447 12.0962 9.75736 11.8033Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== Testimonials Section End -->
+
+    <!-- Our Services -->
+
+    <div class="flex items-center justify-center">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+            <p class="text-3xl font-semibold my-2">Our Services</p>
+            <!-- 1 card -->
+            <div class="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
+
+                <div class="mt-8">
+                    <p class="text-xl font-semibold my-2">User Interface Design</p>
+                    <div class="flex space-x-2 text-gray-400 text-sm">
+                        <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                    </div>
+                    <div class="flex space-x-2 text-gray-400 text-sm my-3">
+                        <a class="text-md font-medium text-blue-700">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 card -->
+            <div class="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
+
+                <div class="mt-8">
+                    <p class="text-xl font-semibold my-2">User Experience Design</p>
+                    <div class="flex space-x-2 text-gray-400 text-sm">
+                        <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                    </div>
+                    <div class="flex space-x-2 text-gray-400 text-sm my-3">
+                        <a class="text-md font-medium text-blue-700">Learn More</a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- 3 card -->
+            <div class="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
+                <div class="mt-8">
+                    <p class="text-xl font-semibold my-2">Applicant Development</p>
+                    <div class="flex space-x-2 text-gray-400 text-sm">
+
+                        <p>"We develop high-quality mobile and web applications using the latest technology stack."</p>
+                    </div>
+                    <div class="flex space-x-2 text-gray-400 text-sm my-3">
+                        <a class="text-md font-medium text-blue-700">Learn More</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+
+    <div class="bg-yellow-400 mt-5overflow-hidden flex col-span-5 items-center justify-center">
+        <div class="flex-col mt-12 mb-6 p-6">
+            <div class="flex flex-col items-center">
+                <p class="text-xl">Do you have any questions?</p>
+                <p class="text-base">Let us help you</p>
+            </div>
+            <div class="flex-row mt-5 mb-5 md:6/12 w-10/5 shadow-3xl">
+                <form class="p-8 md:p-2">
+                    <div class="flex items-center text-lg mb-2 md:mb-2">
+                        <svg class="absolute ml-3" width="24" viewBox="0 0 24 24">
+                            <path
+                                d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
                         </svg>
-                    </button>
-                </div>
+                        <input type="text" id="username" class="pl-12 py-2 md:py-4 focus:outline-none w-full"
+                            placeholder="Email" />
+                    </div>
+                    <button
+                        class="bg-blue-700 to-gray-900 font-medium p-2 md:p-4 text-white uppercase w-full">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-                <div class="hidden mobile-menu">
-                    <ul class="">
-                        <li class="active"> <a href="nav.html"
-                                class="block text-sm px-2 py-4 text-white bg-purple-500 font-semibold">Home</li>
-                        <li><a href="#services"
-                                class="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300">
-                                    Services
-                              </a>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
+        <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="#" target="_blank" class="flex items-center text-2xl font-medium text-blue-700">
+                    Circle
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h3>
+                    <ul>
+                        <li class="mb-4">
+                            <a href="#" target="_blank"
+                                class="text-gray-600 hover:underline dark:text-gray-400">Circle</a>
                         </li>
-                        <li><a href="#About"
-                                class="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300">
-                                    About
-                              </a>
+                        <li>
+                            <a href="#" target="_blank" rel="nofollow"
+                                class="text-gray-600 hover:underline dark:text-gray-400">Tailwind CSS</a>
                         </li>
-                        <li><a href="#Contact Us"
-                                class="block.text-sm.px-2.py-4 hover:bg-purple-500 transition duration-300">
-                                    Contact Us
-                              </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h3>
+                    <ul>
+                        <li class="mb-4">
+                            <a href="#" target="_blank"
+                                class="text-gray-600 hover:underline dark:text-gray-400">Github</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"
+                                class="text-gray-600 hover:underline dark:text-gray-400">Discord</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h3>
+                    <ul>
+                        <li class="mb-4">
+                            <a href="#" target="_blank" class="text-gray-600 hover:underline dark:text-gray-400">Privacy
+                                Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="text-gray-600 hover:underline dark:text-gray-400">Terms
+                                &amp; Conditions</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </nav>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com"
+                    target="_blank" class="hover:underline">Circle</a>. All Rights Reserved.
+            </span>
+
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
 
 
 </body>
