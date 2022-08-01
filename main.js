@@ -38,7 +38,7 @@ btn.addEventListener("click", () => {
     menu.classList.toggle("hidden");
 })
 
-
+placeholder("https://jsonplaceholder.typicode.com/posts");
 // index.js
 
 // fetch("blabla")
