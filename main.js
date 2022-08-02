@@ -26,63 +26,36 @@
 
 //const collapse = new Collapse(targetEl);
 
+const card1 = document.getElementById("output1");
+const card2 = document.getElementById("output2");
+const card3 = document.getElementById("output3");
+const URL = ('https://jsonplaceholder.typicode.com/comments') //placeholder of comments
 
-const btn = document.querySelector('button.menu-button');
-const menu = document.querySelector(".mobile-menu");
-btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-})
 
-const URL = ("https://jsonplaceholder.typicode.com/posts");
 
-function getHere() {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-        .then((response) => response.json())
-        .then((res) => {
-            let apiData = "";
-            const newRes = res.forEach((articulo) => {
-                console.log(articulo.title)
-                apiData += `
-                <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center" >
-                 <h3>
-                                <a href="javascript:void(0)" class="
-                             font-semibold                              text-left
-                             text-dark text-xl
-                              sm:text-[22px]
-                             md:text-xl
-                              lg:text-[22px]
-                              xl:text-xl
-                             2xl:text-[22px]
-                              mb-4
-                             block
-                             hover:text-primary
-                              " class="title">
-                              ${articulo.title}
-                                </a>
-                             </h3>
-                             <p class="text-base text-body-color leading-relaxed mb-7 text-left" class="text-body">
-                             ${articulo.body}
-                            </p>
-                             <a src="./projects.html" href="javascript:void(0)" class="
-                          inline-block
-                           py-2
-                           px-7
-                          text-base text-body-color
-                           font-medium
-                           hover:border-primary hover:bg-primary hover:text-white
-                           transition
-                           ">
-                                 Learn More
-                             </a>
-                             </div>`;
-
-            });
-        });
+function myPosts() {
+    fetch(URL).then(res => res.json())
+        .then(data => card1.innerHTML = data.map((comment) => 
+        `<p class="font-thin text-left">PostId: ${comment.id}</p> <br> 
+        <p class="text-lg font-bold text-left">${comment.name} </p> <br>
+        <p class="text-left">${comment.body} </p>`).slice(8, 9).join(''))
 }
-console.log(getHere())
+myPosts()
 
-document.getElementById("getHere").addEventListener("click", getHere);
+function secondPosts() {
+    fetch(URL).then(res => res.json())
+        .then(data => card2.innerHTML = data.map((comment) => 
+        `<p class="font-thin text-left">PostId: ${comment.id}</p> <br> 
+        <p class="text-lg font-bold text-left">${comment.name} </p> <br>
+        <p class="text-left">${comment.body} </p>`).slice(9, 10).join(''))
+}
+secondPosts()
 
-//Calling an external API
-
-getHere()
+function thirdPosts() {
+    fetch(URL).then(res => res.json())
+        .then(data => card3.innerHTML = data.map((comment) => 
+        `<p class="font-thin text-left">PostId: ${comment.id}</p> <br> 
+        <p class="text-lg font-bold text-left">${comment.name} </p> <br>
+        <p class="text-left">${comment.body} </p>`).slice(4, 5).join(''))
+}
+thirdPosts()
