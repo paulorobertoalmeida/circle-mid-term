@@ -6,7 +6,7 @@ const buttonSubmit = document.getElementById("btn");
 
 
 const fullNameError = document.getElementsByClassName("fullNameError")[0];
-//const lastNameError = document.getElementsByClassName("lastNameError")[0];
+const lastNameError = document.getElementsByClassName("lastNameError")[0];
 const emailError = document.getElementsByClassName("emailError")[0];
 
 //define and declare and empty errors object
@@ -26,24 +26,24 @@ function checkEmpty() {
   for (let key in error) {
     delete error[key];
   }
-  //set all in firstname, lastname, email spans to display none
+  //set all in fullName, lastname, email spans to display none
   fullNameError.style.display = "none";
   lastNameError.style.display = "none";
   emailError.style.display = "none";
 
   //remove all the error class "border-red-500 classes"
-  firstNameInput.classList.remove("border-red-500");
+  fullNameError.classList.remove("border-red-500");
   lastNameInput.classList.remove("border-red-500");
   emailInput.classList.remove("border-red-500");
 
 //remove white spaces from every input Field
-  const firstNameValue = firstNameInput.value.trim();
+  const fullNameValue = fullNameError.value.trim();
   const lastNameValue = lastNameInput.value.trim();
   const emailValue = emailInput.value.trim();
 
   //check if all inputs are empty then add new new error keys to the defined error object
-  if (firstNameValue === "") {
-    error.firstName = "First Name is required";
+  if (fullNameValue === "") {
+    error.fullName = "First Name is required";
   }
   if (lastNameValue === "") {
     error.lastName = "Last Name is required";
@@ -52,17 +52,17 @@ function checkEmpty() {
     error.email = "Email is required";
   }
 
-  //validate the inputs firstName and lastName
-  if (firstNameValue !== "") {
-    if (!firstNameValue.match(/^[a-zA-Z0-9]+$/)) {
-      error.firstName = "First Name must be letters only";
+  //validate the inputs fullName and lastName
+  if (fullNameValue !== "") {
+    if (!fullNameValue.match(/^[a-zA-Z0-9]+$/)) {
+      error.fullName = "First Name must be letters only";
     }
   }
-  if (lastNameValue !== "") {
-    if (!lastNameValue.match(/^[a-zA-Z0-9]+$/)) {
-      error.lastName = "Last Name must be letters only";
-    }
-  }
+  //if (lastNameValue !== "") {
+   // if (!lastNameValue.match(/^[a-zA-Z0-9]+$/)) {
+  //    error.lastName = "Last Name must be letters only";
+   // }
+  // }
   if (emailValue !== "") {
     //validating an email
     if (!emailValue.match(/^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$/)) {
@@ -90,12 +90,11 @@ function checkEmpty() {
 
 //display errors respectivey to the span html classes
 function displayError() {
-  //set all errors to their respectivey and also changing hidden 
-error containers to be a block.
-  if (error.firstName) {
-    firstNameInput.classList.add("border-red-500");
+  //set all errors to their respectivey and also changing hidden error containers to be a block.
+  if (error.fullName) {
+    fullNameInput.classList.add("border-red-500");
     fullNameError.style.display = "block";
-    fullNameError.innerHTML = error.firstName;
+    fullNameError.innerHTML = error.fullName;
   }
   if (error.lastName) {
     lastNameInput.classList.add("border-red-500");
@@ -115,8 +114,8 @@ function submitForm() {
 //TODO: Add an API ENDPOINT to send the data.
 
   //show the values for now but later we going to add some api intergration
-  console.log(firstNameInput.value);
-  console.log(lastNameInput.value);
+  console.log(fullNameInput.value);
+  //console.log(lastNameInput.value);
   console.log(emailInput.value);
   //reset the login buttonSubmit
 
@@ -127,3 +126,4 @@ function submitForm() {
   //reset the form and clear all fields
   form.reset();
 }
+

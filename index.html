@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./main.js"></script>
     <title>Circle</title>
 </head>
 
@@ -35,6 +34,8 @@
             </svg>
 
     </nav>
+
+    
 
     <!-- Hero Section -->
     <section class="bg-[#f2f4fc] dark:bg-gray-900">
@@ -71,6 +72,7 @@
             </div>
         </div>
     </section>
+
     <!-- Link Section -->
     <nav class="bg-[#f2f4fc] ">
         <div class="max-w-7xl mx-auto flex content-center justify-center;">
@@ -119,8 +121,8 @@
                         <img src="https://uploads-ssl.webflow.com/61fead28c13f346b71e5645f/61feadb7386a4ce8e1606b95_1-p-1080.jpeg"
                             alt="image"
                             class="w-full h-64 block transition duration-200 ease-out transform hover:scale-110" />
-                        <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                            <h3>
+                        <div class="output">
+                            <!-- <h3>
                                 <a href="javascript:void(0)" class="
                              font-semibold
                              text-left
@@ -150,7 +152,7 @@
                           transition
                           ">
                                 Learn More
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -159,7 +161,7 @@
                         <img src="https://uploads-ssl.webflow.com/61fead28c13f346b71e5645f/61feae20bffd880ac1b46d5d_2-p-800.jpeg"
                             alt="image"
                             class="w-full h-64 block transition duration-200 ease-out transform hover:scale-110" />
-                        <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                        <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center" class="output">
                             <h3>
                                 <a src="./projects.html" href="javascript:void(0)" class="
                              font-semibold
@@ -198,7 +200,7 @@
                         <img src="https://uploads-ssl.webflow.com/61fead28c13f346b71e5645f/61feae3dbd995716808be594_3-p-1080.jpeg"
                             alt="image"
                             class="w-full h-64 block transition duration-200 ease-out transform hover:scale-110" />
-                        <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+                        <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center" class="output">
                             <h3>
                                 <a href="javascript:void(0)" class="
                              font-semibold
@@ -238,13 +240,19 @@
     </section>
 
     <!-- ====== Testimonials Section Start -->
-    <section class="pt-5 lg:pt-[120px] pb-20 d-flex justify-center ">
-        <div class="container flex-col mx-auto max-w-4xl bg-slate-800  md:w-[1260] md:h-[450px] bg-[url('./img/orbit.png')]  ">
-            <div class="relative px-5 py-5 mx-5 my-5">
-                <div class="mx-auto align-center">
+    <section class="pt-5 lg:pt-[120px] pb-20 d-flex justify-center bg-slate-800  relative bg-[url('./img/orbit.png')]">
+        <img src="./img/memoji-1.png" class="absolute top-[100px] left-[100px] w-24 mx-w-sm hidden md:inline" alt="">
+        <img src="./img/memoji-2.png" class="absolute top-[100px] right-[100px] w-24 hidden md:inline" alt="">
+        <img src="./img/memoji-3.png" class="absolute bottom-[100px] left-[100px] w-24 hidden md:inline" alt="">
+        <img src="./img/memoji-4.png" class="absolute bottom-[100px] right-[100px] w-24 hidden md:inline" alt="">
+        <div
+            class="container flex-col mx-auto max-w-4xl  md:w-[1260] md:h-[450px]">
+            <div class="flex px-5 py-5 mx-5 my-5">
+                <div class="mx-auto ">
                     <div class="flex-col justify-center align-center my-9 max-w-md">
                         <p class="text-5xl text-white text-center">Here What our Clients <br> Have to Say</p>
-                        <p class="text-xl text-yellow-400 mt-5 text-center md:max-w-md">"Circle helped us through every stage of our
+                        <p class="text-xl text-yellow-400 mt-5 text-center md:max-w-md">"Circle helped us through every
+                            stage of our
                             startup. We really
                             enjoyed working with you."
                         </p>
@@ -253,23 +261,25 @@
                                 <a href="#" class="flex items-center mt-6 mb-6"><img
                                         src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800d1117d92108a29dcdc_Profile.png"
                                         alt="avatar" class="hidden object-cover w-14 h-14 mx-4 rounded-full sm:block">
-                                        <div class="flex-col">
-                                    <h1 class="font-bold text-gray-700 hover:underline">Kristin Watson</h1><br>
-                                    <p class="text-white">Booking.com</p>
-                                </div>
+                                    <div class="flex-col">
+                                        <h1 class="font-bold text-gray-700 hover:underline">Kristin Watson</h1><br>
+                                        <p class="text-white">Booking.com</p>
+                                    </div>
                                 </a>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
-                <img src="./img/memoji-1.png" class="absolute top-[50px] left-0 w-24 mx-w-sm hidden md:inline" alt="">
-                <img src="./img/memoji-2.png" class="absolute top-[50px] right-0 w-24 hidden md:inline" alt="">
-                <img src="./img/memoji-3.png" class="absolute bottom-[-50px] left-0 w-24 hidden md:inline" alt="">
-                <img src="./img/memoji-4.png" class="absolute bottom-[-50px] right-0 w-24 hidden md:inline" alt="">
+
             </div>
         </div>
     </section>
+
+    <!-- <section>
+       
+        <div class="mx-auto flex justify-center" id="vayaConDeus"> hello  </div>
+    </section> -->
     <!-- ====== Testimonials Section End -->
     <!-- Our Services -->
 
@@ -305,8 +315,6 @@
                     <div class="flex space-x-2 text-gray-400 text-sm my-7">
                         <a class="text-md font-medium text-[#072ac8]">Learn More</a>
                     </div>
-
-
 
                 </div>
             </div>
@@ -356,7 +364,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Footer -->
     <footer class="p-4  sm:p-6 dark:bg-gray-800 my-10">
@@ -408,8 +415,7 @@
         </div>
     </footer>
 
-
-
+    <script src="main.js"></script>
 </body>
 
 </html>
