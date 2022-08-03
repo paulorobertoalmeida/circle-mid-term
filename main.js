@@ -37,8 +37,8 @@ function myPosts() {
     fetch(URL).then(res => res.json())
         .then(data => card1.innerHTML = data.map((comment) => 
         `<p class="font-thin text-left">PostId: ${comment.id}</p> <br> 
-        <p class="text-lg font-bold text-left">${comment.name} </p> <br>
-        <p class="text-left">${comment.body} </p>`).slice(8, 9).join(''))
+        <p class="text-lg font-bold text-left truncate">${comment.name} </p> <br>
+        <p class="text-left truncate">${comment.body} </p>`).slice(8, 9).join(''))
 }
 myPosts()
 
@@ -46,8 +46,8 @@ function secondPosts() {
     fetch(URL).then(res => res.json())
         .then(data => card2.innerHTML = data.map((comment) => 
         `<p class="font-thin text-left">PostId: ${comment.id}</p> <br> 
-        <p class="text-lg font-bold text-left">${comment.name} </p> <br>
-        <p class="text-left">${comment.body} </p>`).slice(9, 10).join(''))
+        <p class="text-lg font-bold text-left truncate">${comment.name} </p> <br>
+        <p class="text-left truncate">${comment.body} </p>`).slice(9, 10).join(''))
 }
 secondPosts()
 
@@ -55,7 +55,7 @@ function thirdPosts() {
     fetch(URL).then(res => res.json())
         .then(data => card3.innerHTML = data.map((comment) => 
         `<p class="font-thin text-left">PostId: ${comment.id}</p> <br> 
-        <p class="text-lg font-bold text-left">${comment.name} </p> <br>
-        <p class="text-left">${comment.body} </p>`).slice(4, 5).join(''))
+        <p class="text-lg font-bold text-left truncate">${comment.name} </p> <br>
+        <p class="text-left truncate">${comment.body} </p>`).slice(4, 5).join(''))
 }
 thirdPosts()
