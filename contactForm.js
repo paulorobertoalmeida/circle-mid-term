@@ -1,129 +1,42 @@
-const fullNameInput = document.getElementById("full_name");
-const lastNameInput = document.getElementById("phone_number");
-const emailInput = document.getElementById("email");
-const form = document.getElementById("text");
-const buttonSubmit = document.getElementById("btn");
+// const fullNameInput = document.getElementById("full_name"); //ok
+// const lastNameInput = document.getElementById("phone_number"); //
+// const emailInput = document.getElementById("email");
+// const form = document.getElementById("text");
+// const buttonSubmit = document.getElementById("btn");
 
 
-const fullNameError = document.getElementsByClassName("fullNameError")[0];
-const lastNameError = document.getElementsByClassName("lastNameError")[0];
-const emailError = document.getElementsByClassName("emailError")[0];
+// const fullNameError = document.getElementsByClassName("fullNameError")[0];
+// const lastNameError = document.getElementsByClassName("lastNameError")[0];
+// const emailError = document.getElementsByClassName("emailError")[0];
 
 //define and declare and empty errors object
-let error = {};
+//let error = {};
 
-/* This is a JavaScript event listener. It is a way to listen for an event. In this case, it is
-listening for the form to be submitted. */
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-//function to validate the form fields before submitting
-  checkEmpty();
-});
+const name = document.getElementById('name')
+const password = document.getElementById('password')
+const form = document.getElementById('form')
+const errorElement = document.getElementById('error')
 
-// validate empty fields and set error object
-function checkEmpty() {
-  //loop and remove all key and value fields in the errors object
-  for (let key in error) {
-    delete error[key];
-  }
-  //set all in fullName, lastname, email spans to display none
-  fullNameError.style.display = "none";
-  lastNameError.style.display = "none";
-  emailError.style.display = "none";
-
-  //remove all the error class "border-red-500 classes"
-  fullNameError.classList.remove("border-red-500");
-  lastNameInput.classList.remove("border-red-500");
-  emailInput.classList.remove("border-red-500");
-
-//remove white spaces from every input Field
-  const fullNameValue = fullNameError.value.trim();
-  const lastNameValue = lastNameInput.value.trim();
-  const emailValue = emailInput.value.trim();
-
-  //check if all inputs are empty then add new new error keys to the defined error object
-  if (fullNameValue === "") {
-    error.fullName = "First Name is required";
-  }
-  if (lastNameValue === "") {
-    error.lastName = "Last Name is required";
-  }
-  if (emailValue === "") {
-    error.email = "Email is required";
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if (name.value === '' || name.value == null) {
+    messages.push('Name is required')
   }
 
-  //validate the inputs fullName and lastName
-  if (fullNameValue !== "") {
-    if (!fullNameValue.match(/^[a-zA-Z0-9]+$/)) {
-      error.fullName = "First Name must be letters only";
-    }
-  }
-  //if (lastNameValue !== "") {
-   // if (!lastNameValue.match(/^[a-zA-Z0-9]+$/)) {
-  //    error.lastName = "Last Name must be letters only";
-   // }
-  // }
-  if (emailValue !== "") {
-    //validating an email
-    if (!emailValue.match(/^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$/)) {
-      error.email = "Email must be a valid email";
-    }
+  if (password.value.length <= 6) {
+    messages.push('Password must be longer than 6 characters')
   }
 
-  //if we have error add the error to the error message
-  if (Object.keys(error).length > 0) {
-    displayError();
-  } else {
-    //submit the form with a delay of 2 seconds
-    //change the button innerText to submitting and add no-cursor class and disabled attribute to it
-    buttonSubmit.value = "Submitting...";
-    buttonSubmit.setAttribute("disabled", "disabled");
-
-//set a delay of 2 seconds since we dont have an api endpoint to send the data to just mimic the process
-    new Promise(function (resolve, reject) {
-      setTimeout(function () {
-        resolve(submitForm());
-      }, 2000);
-    });
+  if (password.value.length >= 20) {
+    messages.push('Password must be less than 20 characters')
   }
-}
 
-//display errors respectivey to the span html classes
-function displayError() {
-  //set all errors to their respectivey and also changing hidden error containers to be a block.
-  if (error.fullName) {
-    fullNameInput.classList.add("border-red-500");
-    fullNameError.style.display = "block";
-    fullNameError.innerHTML = error.fullName;
+  if (password.value === 'password') {
+    messages.push('Password cannot be password')
   }
-  if (error.lastName) {
-    lastNameInput.classList.add("border-red-500");
-    lastNameError.style.display = "block";
-    lastNameError.innerHTML = error.lastName;
+
+  if (messages.length > 0) {
+    e.preventDefault()
+    errorElement.innerText = messages.join(', ')
   }
-  if (error.email) {
-    //loop over the classes and add other classes
-    emailInput.classList.add("border-red-500");
-    emailError.style.display = "block";
-    emailError.innerHTML = error.email;
-  }
-}
-
-//submitting the form
-function submitForm() {
-//TODO: Add an API ENDPOINT to send the data.
-
-  //show the values for now but later we going to add some api intergration
-  console.log(fullNameInput.value);
-  //console.log(lastNameInput.value);
-  console.log(emailInput.value);
-  //reset the login buttonSubmit
-
-//after 2 seconds is over change the input type button innerText and remove the disabled attribute.
-  buttonSubmit.value = "Login Now";
-  buttonSubmit.removeAttribute("disabled");
-
-  //reset the form and clear all fields
-  form.reset();
-}
-
+})
