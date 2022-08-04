@@ -38,7 +38,7 @@ function myPosts() {
         .then(data => card1.innerHTML = data.map((comment) => 
         `<p class="font-thin text-left">PostId: ${comment.id}</p> <br> 
         <p class="text-lg font-bold text-left truncate">${comment.name} </p> <br>
-        <p class="text-left truncate">${comment.body} </p>`).slice(8, 9).join(''))
+        <p class="text-left truncate">${comment.body} </p>`).slice(1, 2).join(''))
 }
 myPosts()
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Contacts</title>
 </head>
+
 <body class="bg-[#f2f4fc]">
+
+
     <nav class="container flex justify-center justify-between align-center px-4 py-8 mx-auto ">
         <div class="ml-4">
             <h3 class="text-2xl font-bold text-[#072ac8] ">Circle</h3>
@@ -19,49 +23,70 @@
         </div>
         <div>
             <a href="./contact.html">
-            <button
-                class="px-6 py-3 bg-[#072ac8] outline-none text-white shadow-indigo-200 shadow-lg font-medium active:shadow-none active:scale-95 hover:bg-indigo-600 focus:bg-indigo-600 focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200 hidden md:inline">Contact
-                Us</button>
+                <button
+                    class="px-6 py-3 bg-[#072ac8] outline-none text-white shadow-indigo-200 shadow-lg font-medium active:shadow-none active:scale-95 hover:bg-indigo-600 focus:bg-indigo-600 focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200 hidden md:inline">Contact
+                    Us</button>
             </a>
         </div>
-        <div class="flex lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+        <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 lg:hidden inline" x-show="!showMenu" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="index.html"
+                        class="block text-sm px-2 py-4 text-white bg-[#072ac8] font-semibold">Home</a></li>
+                <li><a href="#services"
+                        class="block text-sm px-2 py-4 hover:bg-[#072ac8] transition duration-300">Projects</a></li>
+                <li><a href="#about"
+                        class="block text-sm px-2 py-4 hover:bg-[#072ac8] transition duration-300">services</a></li>
+                <li><a href="#contact"
+                        class="block text-sm px-2 py-4 hover:bg-[#072ac8] transition duration-300">Contact Us</a></li>
+            </ul>
+        </div>
 
     </nav>
+
+
     <!-- Form -->
     <div class="flex justify-center items-center h-screen w-full bg-[#f2f4fc]">
         <div class="w-1/2  p-8 m-4">
             <h1 class="block w-full text-center text-gray-800 text-5xl font-bold mb-6">Contact Us</h1>
             <div id="error"></div>
-            <form id="form" action="/" method="POST">
+            <form id="form" action="/">
                 <div class="flex flex-col mb-4">
                     <label class="mb-2 font-bold text-lg text-gray-900" for="full_name">Full Name</label>
-                    <input class="border py-2 px-3 text-grey-800" type="text" name="full_name" id="full_name">
-                    <span class="block firstNameError text-red-500 text-xs hidden">error</span>
+                    <input class="border py-2 px-3 text-grey-800" type="text" name="full_name" id="username">
+                    <span class="error block text-red-500 text-xs hidden">error</span>
                 </div>
                 <div class="flex flex-col mb-4">
                     <label class="mb-2 font-bold text-lg text-gray-900" for="phone">Phone</label>
-                    <input class="border py-2 px-3 text-grey-800" type="number" name="phone" id="phone_number">
+                    <input class="border py-2 px-3 text-grey-800" type="number" name="phone" id="password">
+                    <span class="error block  text-red-500 text-xs hidden">error</span>
                 </div>
                 <div class="flex flex-col mb-4">
                     <label class="mb-2 font-bold text-lg text-gray-900" for="email">Email</label>
                     <input class="border py-2 px-3 text-grey-800" type="email" name="email" id="email">
-                    <span class="block emailError text-red-500 text-xs  hidden">error</span>
+                    <span class="block error text-red-500 text-xs  hidden">error</span>
                 </div>
                 <div class="flex flex-col mb-4">
                     <label class="mb-2 font-bold text-lg text-gray-900" for="password">Message</label>
-                    <input class="border py-2 px-3 text-grey-800" type="text" name="text" id="message">
+                    <input class="border py-2 px-3 text-grey-800" type="text" name="text" id="password2">
+                    <span class="error block text-red-500 text-xs hidden">error</span>
                 </div>
-                <button class="block bg-[#072ac8] hover:bg-teal-600 text-white uppercase text-lg mx-auto p-4 rounded" type="submit">Submit</button>
+                <button class="block bg-[#072ac8] hover:bg-teal-600 text-white uppercase text-lg mx-auto p-4 rounded"
+                    type="submit">Submit</button>
             </form>
-            <a class="block w-full text-center no-underline mt-4 text-sm text-gray-700 hover:text-gray-900" href="/login">Already have an account?</a>
+
         </div>
     </div>
-     <!-- Footer -->
-     <footer class="p-4  sm:p-6 dark:bg-gray-800 my-10">
+    <!-- Footer -->
+    <footer class="p-4  sm:p-6 dark:bg-gray-800 my-10">
         <div class="md:flex md:justify-between">
             <div class="mb-8 md:mb-0">
                 <a href="#" target="_blank" class="flex items-center text-2xl font-medium text-blue-700">
@@ -100,7 +125,8 @@
                                 Us</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank" class="text-[#072ac8] hover:underline dark:text-gray-400">Privacy
+                            <a href="#" target="_blank"
+                                class="text-[#072ac8] hover:underline dark:text-gray-400">Privacy
                                 Policy</a>
                         </li>
                     </ul>
@@ -108,6 +134,7 @@
             </div>
         </div>
     </footer>
-    <script  src="./contactForm.js"></script>
+    <script src="./contact2.js"></script>
 </body>
+
 </html>
