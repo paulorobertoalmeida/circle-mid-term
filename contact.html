@@ -17,8 +17,8 @@
             <h3 class="text-2xl font-bold text-[#072ac8] ">Circle</h3>
         </div>
         <div class="hidden space-x-8 lg:flex">
-            <a href="#" class="hover:text-blue-600 active:blue-600">Home</a>
-            <a href="#" class="hover:text-blue-600 active:blue-600">Projects</a>
+            <a href="./index.html" class="hover:text-blue-600 active:blue-600">Home</a>
+            <a href="./projects.html " class="hover:text-blue-600 active:blue-600">Projects</a>
             <a href="#" class="hover:text-blue-600 active:blue-600">Services</a>
         </div>
         <div>
@@ -28,7 +28,7 @@
                     Us</button>
             </a>
         </div>
-        <div class="md:hidden flex items-center">
+        <div class="md:hidden flex items-cente">
             <button class="outline-none mobile-menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 lg:hidden inline" x-show="!showMenu" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor">
@@ -54,82 +54,36 @@
 
     <div class="flex justify-center items-center h-screen w-full bg-[#f2f4fc]">
         <div class="w-1/2  p-8 m-4">
-            <h1 class="block w-full text-center text-gray-800 text-5xl font-bold mb-6">Contact Us</h1>
-            <div id="error"></div>
+            <h1 class="block w-full text-left text-gray-800 text-5xl font-bold mb-6">Contact Us</h1>
+            <div id="error" class="bg-danger font-semibold h-6"></div>
             <form id="form" action="/">
                 <div class="flex flex-col mb-4 input-control">
-                    <label class="mb-2 font-bold text-lg text-gray-900" for="username">Full Name</label>
-                    <input class="border py-4 px-3 text-grey-800" id="username" name="username" type="text">
+                    <label class="mb-2 font-semibold text-lg text-gray-500" for="username">Full Name*</label>
+                    <input class="border py-4 px-3 text-grey-800" id="username" name="username" type="text" placeholder="Username required">
                     <div class="error block text-red-500 text-xs hidden"></div>
                 </div>
                 <div class="ld:flex-col flex place-content-between auto">
                 <div class="input-control flex flex-col mb-4">
-                    <label class="mb-2 font-bold text-lg text-gray-900" for="email">Email</label>
-                    <input class="border py-2 space-x-1 text-grey-800" id="email" name="email" type="text">
-                    <div class="error"></div>
+                    <label class="mb-2 font-semibold text-lg text-gray-500" for="email">Email</label>
+                    <input class="border py-4 space-x-1 text-grey-800" id="email" name="email" type="text" placeholder="Email required">
+                    <div class="error block text-red-500 text-xs hidden"></div>
                 </div>
                 <div class="input-control flex flex-col mb-4 mx-auto">
-                    <label class="mb-2 font-bold text-lg text-gray-900" for="password">Phone</label>
-                    <input id="password" class="border py-2 space-x-3 w-[300px]  text-grey-800"  name="password" type="password">
-                    <div class="error"></div>
+                    <label class="mb-2 font-semibold text-lg text-gray-500" for="password">Phone</label>
+                    <input id="password" class="border py-4 space-x-3 w-[300px]  text-grey-800"  name="password" type="password" placeholder="Enter your phone">
+                    <div class="error block text-red-500 text-xs hidden"></div>
                 </div>
             </div>
                 <div class="input-control flex flex-col mb-4">
-                    <label class="mb-2 font-bold text-lg text-gray-900" for="password2">message</label>
-                    <input class="border py-9 px-3 text-grey-800" id="password2" name="password2" type="password">
-                    <div class="error"></div>
+                    <label class="mb-2 font-semibold text-lg text-gray-500" for="password2">Message*</label>
+                    <input class="border py-10 px-3 text-grey-800" id="password2" name="password2" type="password" placeholder="type your message here">
+                    <div class="error block text-red-500 text-xs hidden"></div>
                 </div>
-                <button class="block bg-[#072ac8] hover:bg-teal-600 text-white uppercase text-lg mx-auto p-4 rounded" type="submit">Sign Up</button>
+                <button class="block bg-[#072ac8] hover:bg-teal-600 text-white  text-lg w-full p-6" type="submit">Submit</button>
             </form>
 
         </div>
     </div>
-
-
-
-
-
-
-
-
-    <!-- Form -->
-    <div class="flex justify-center items-center h-screen w-full bg-[#f2f4fc]">
-        <div class="w-1/2  p-8 m-4">
-            <h1 class="block w-full text-center text-gray-800 text-5xl font-bold mb-6">Contact Us</h1>
-            <div id="error"></div>
-            <form id="form" action="/">
-                <div class="flex flex-col mb-4">
-                    <label class="mb-2 font-bold text-lg text-gray-900" for="full_name">Full Name</label>
-                    <input class="border py-2 px-3 text-grey-800" type="text" name="full_name" id="username">
-                    <span class="error block text-red-500 text-xs hidden">error</span>
-                </div>
-                <div class="flex flex-col mb-4">
-                    <label class="mb-2 font-bold text-lg text-gray-900" for="phone">Phone</label>
-                    <input class="border py-2 px-3 text-grey-800" type="number" name="phone" id="password">
-                    <span class="error block  text-red-500 text-xs hidden">error</span>
-                </div>
-                <div class="flex flex-col mb-4">
-                    <label class="mb-2 font-bold text-lg text-gray-900" for="email">Email</label>
-                    <input class="border py-2 px-3 text-grey-800" type="email" name="email" id="email">
-                    <span class="block error text-red-500 text-xs  hidden">error</span>
-                </div>
-                <div class="flex flex-col mb-4">
-                    <label class="mb-2 font-bold text-lg text-gray-900" for="password">Message</label>
-                    <input class="border py-2 px-3 text-grey-800" type="text" name="text" id="password2">
-                    <span class="error block text-red-500 text-xs hidden">error</span>
-                </div>
-                <button class="block bg-[#072ac8] hover:bg-teal-600 text-white uppercase text-lg mx-auto p-4 rounded"
-                    type="submit">Submit</button>
-            </form>
-
-        </div>
-    </div>
-
-
-
-
-
-
 
 
     <!-- Footer -->
