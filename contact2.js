@@ -1,4 +1,4 @@
-// menu Hambuerguer
+// menu Hamburguer
 
 const btn = document.querySelector("button.mobile-menu-button");
 const menu = document.querySelector(".mobile-menu");
@@ -87,4 +87,5 @@ const validateInputs = () => {
     } else {
         setSuccess(password2);
     }
+    console.log(setError)
 }

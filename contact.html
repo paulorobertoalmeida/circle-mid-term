@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+
     <title>Contacts</title>
 </head>
 
 <body class="bg-[#f2f4fc]">
 
-
+    <!-- 
     <nav class="container flex justify-center justify-between align-center px-4 py-8 mx-auto ">
         <div class="ml-4">
             <h3 class="text-2xl font-bold text-[#072ac8] ">Circle</h3>
@@ -28,15 +30,16 @@
                     Us</button>
             </a>
         </div>
-        <div class="md:hidden items-center">
+        <div class="md:hidden flex flex-col items-center">
             <button class="outline-none mobile-menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 lg:hidden inline" x-show="!showMenu" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
+            
         </div>
-        <!-- mobile menu -->
+        
         <div class="hidden mobile-menu">
             <ul class="">
                 <li class="active"><a href="index.html"
@@ -50,36 +53,91 @@
             </ul>
         </div>
 
-    </nav>
+    </nav> -->
 
-    <div class="flex justify-center items-center h-screen w-full bg-[#f2f4fc]">
+
+    <nav
+        class=" px-2 sm:px-4 py-2.5 w-full z-20  dark:border-gray-600">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="https://flowbite.com/" class="flex items-center">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Circle</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contact Us</button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+
+    <!--Form-->
+    <div class="flex justify-center items-center mt-10h-screen w-full bg-[#f2f4fc]">
         <div class="w-1/2  p-8 m-4">
             <h1 class="block w-full text-left text-gray-800 text-5xl font-bold mb-6">Contact Us</h1>
             <div id="error" class="bg-danger font-semibold h-6"></div>
             <form id="form" action="/">
                 <div class="flex flex-col mb-4 input-control">
                     <label class="mb-2 font-semibold text-lg text-gray-500" for="username">Full Name*</label>
-                    <input class="border py-4 px-3 text-grey-800" id="username" name="username" type="text" placeholder="Username required">
+                    <input class="border py-4 px-3 text-grey-800" id="username" name="username" type="text"
+                        placeholder="Username required">
                     <div class="error block text-red-500 text-xs hidden"></div>
                 </div>
-                <div class="ld:flex-col flex place-content-between auto">
+
                 <div class="input-control flex flex-col mb-4">
                     <label class="mb-2 font-semibold text-lg text-gray-500" for="email">Email</label>
-                    <input class="border py-4 space-x-1 text-grey-800" id="email" name="email" type="text" placeholder="Email required">
+                    <input class="border py-4 space-x-1 text-grey-800" id="email" name="email" type="text"
+                        placeholder="Email required">
                     <div class="error block text-red-500 text-xs hidden"></div>
                 </div>
                 <div class="input-control flex flex-col mb-4 mx-auto">
                     <label class="mb-2 font-semibold text-lg text-gray-500" for="password">Phone</label>
-                    <input id="password" class="border py-4 space-x-3 w-[300px]  text-grey-800"  name="password" type="password" placeholder="Enter your phone">
+                    <input id="password" class="border py-4 space-x-3  text-grey-800" name="number" type="password"
+                        placeholder="Enter your phone">
                     <div class="error block text-red-500 text-xs hidden"></div>
                 </div>
-            </div>
+
                 <div class="input-control flex flex-col mb-4">
-                    <label class="mb-2 font-semibold text-lg text-gray-500" for="password2">Message*</label>
-                    <input class="border py-10 px-3 text-grey-800" id="password2" name="password2" type="password" placeholder="type your message here">
+                    <label class="mb-2 font-semibold text-lg text-gray-500" for="text">Message*</label>
+                    <input class="border py-10 px-3 text-grey-800" id="password2" name="password2" type="password"
+                        placeholder="type your message here">
                     <div class="error block text-red-500 text-xs hidden"></div>
                 </div>
-                <button class="block bg-[#072ac8] hover:bg-teal-600 text-white  text-lg w-full p-6" type="submit">Submit</button>
+                <button class="block bg-[#072ac8] hover:bg-teal-600 text-white  text-lg w-full p-6"
+                    type="submit">Submit</button>
             </form>
 
         </div>
@@ -136,6 +194,7 @@
         </div>
     </footer>
     <script src="./contact2.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 </body>
 
 </html>
