@@ -12,6 +12,9 @@
 
 <!-- PROJECT LOGO -->
 <br />
+  <p align="center">
+     <img src="img/circle page.png" alt="Homepage photo" />
+   </p>
 
 
 <h3 align="center">Circle ⭕️ Mid project</h3>
