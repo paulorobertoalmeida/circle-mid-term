@@ -7,6 +7,10 @@ btn.addEventListener("click", () => {
     menu.classList.toggle("hidden");
 });
 
+window.addEventListener("resize", () =>{
+    menu.classList.toggle("hidden");
+})
+
 
 
 // form Validation
