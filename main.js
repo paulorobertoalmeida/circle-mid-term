@@ -38,7 +38,17 @@ function myPosts() {
         .then(data => card1.innerHTML = data.map((comment) => 
         `<p class="font-thin text-left">PostId: ${comment.id}</p> <br> 
         <p class="text-lg font-bold text-left truncate">${comment.name} </p> <br>
-        <p class="text-left truncate">${comment.body} </p>`).slice(1, 2).join(''))
+        <p class="text-left truncate">${comment.body} </p>
+        <a src="./projects.html" href="javascript:void(0)" class="
+        text-left
+        inline-block
+        py-2
+        text-[#072ac8]
+        font-bold
+        hover:border-primary hover:bg-primary hover:text-white
+        transition
+        ">
+        Learn more</a>`).slice(1, 2).join(''))
 }
 myPosts()
 
@@ -47,7 +57,17 @@ function secondPosts() {
         .then(data => card2.innerHTML = data.map((comment) => 
         `<p class="font-thin text-left">PostId: ${comment.id}</p> <br> 
         <p class="text-lg font-bold text-left truncate">${comment.name} </p> <br>
-        <p class="text-left truncate">${comment.body} </p>`).slice(9, 10).join(''))
+        <p class="text-left truncate">${comment.body} </p>
+        <a src="./projects.html" href="javascript:void(0)" class="
+        text-left
+        inline-block
+        py-2
+        text-[#072ac8]
+        font-bold
+        hover:border-primary hover:bg-primary hover:text-white
+        transition
+        ">
+        Learn more</a>`).slice(9, 10).join(''))
 }
 secondPosts()
 
@@ -56,6 +76,16 @@ function thirdPosts() {
         .then(data => card3.innerHTML = data.map((comment) => 
         `<p class="font-thin text-left">PostId: ${comment.id}</p> <br> 
         <p class="text-lg font-bold text-left truncate">${comment.name} </p> <br>
-        <p class="text-left truncate">${comment.body} </p>`).slice(4, 5).join(''))
+        <p class="text-left truncate">${comment.body} </p>
+        <a src="./projects.html" href="javascript:void(0)" class="
+        text-left
+        inline-block
+        py-2
+        text-[#072ac8]
+        font-bold
+        hover:border-primary hover:bg-primary hover:text-white
+        transition
+        ">
+        Learn more</a>`).slice(4, 5).join(''))
 }
 thirdPosts()
